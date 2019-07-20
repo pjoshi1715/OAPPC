@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> About Me </title>
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="banner">
+
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          O.A.P.P.C
+        </div>
+        <div class="menu">
+          <ul>
+            <li> <a href="Home_Page.html"> Home</a> </li>
+            <li> <a href="Our_Product.html"  class="rightnow"> Our Product</a> </li>
+            <li> <a href="Contact_Us.html" > Contact Us</a> </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="gradient-overlay"> </div>
+    </header>
+
+  </div>
+
+
+  <!--Javascript-->
+
+  <script type="text/javascript">
+    /*global $ */
+
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+
+      else {
+        $('nav').removeClass('black');
+      }
+    });
+  </script>
+
+  <div class="container">
+    <div class="banner-text">
+      <h2> Our Product</h2>
+    </div>
+  </div>
+  <br> <br> 
+  <div class="container">
+                        <div class="card-body">
+                            <h4 class="card-title">The Problem</h4>
+                            <p class="card-text"> 
+                            In the USA, over 130 people die each day due to an 
+                            opioid overdose. This problem affects every level of 
+                            society today and costs the government 78.5 Billion 
+                            dollars a year. People get addicted to opioids by 
+                            receiving a prescription dose of an opioid painkiller 
+                            like (OxyContin, Vicodin, or Morphine) and take too 
+                            much of their dose when they encounter more 
+                            pain/trouble. We wanted to solve this problem by 
+                            proposing an alternative solution that makes the 
+                            user strictly adhere to their prescription and hold 
+                            them accountable by having it controlled by the 
+                            doctors who give them their prescriptions.  
+
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Our Solution</h4>
+                            <p class="card-text"> 
+                            Our solution is a secure pill dispenser, that acts 
+                            like a gumball machine, and only dispenses 1 or 2 
+                            pills at a specified time that the doctors set for 
+                            the user. This solution bridges the gap between the 
+                            prescription and the user.
+
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Why Pick Us</h4>
+                            <p class="card-text"> 
+                            <ul>
+                            <li>Cheaper than alternatives</li>
+                            <li>Much more efficient than alternatives at preventing overdoses</li>
+                            <li>Can be used for other pills than opioids</li>
+                            <li>We have a companion app that pairs with the container 
+                            that uses Face ID to authenticate users, and can even 
+                            reminds you to take your medications if you forget</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <center>
+                        <a><img src="images/CAD_IMAGE_1.png" style="width:300px;height:300px;"></a>
+                        <a><img src="images/CAD_IMAGE_2.png" style="width:300px;height:300px;"></a>
+                        <a><img src="images/CAD_IMAGE_3.png" style="width:300px;height:300px;"></a>
+                        </center>
+      </div>
+
+ 
+    <div class="container">
+  <!------ YOOYOYOYOYOY WHERES THE ABOUT US 
+  Parth - Do We Need it?-------> 
+    </div>
+
+  
+<div class="container">
+    <hr>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="social">
+      <a href="mailto:arinmanohar@gmail.com?Subject=Contact%20me" target="_blank">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+      <a href="https://github.com/LoneKampfer" target="_blank">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+      <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+      <img src="images/DHS.jpg">
+    </a>
+
+    </div>
+  </div>
+  
+</body>
+
+</html>

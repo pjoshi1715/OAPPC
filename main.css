@@ -1,0 +1,425 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+body {
+  font-family: Quicksand;
+  background-color: #262626;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(images/litty-background.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.clouds {
+  width: 100%;
+  height: 100vh;
+  background: url(Images/clouds.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  color: red;
+}
+
+.butn {
+  padding: 10px 16px;
+  font-size: 18px;
+  background: firebrick;
+  border: none;
+  border-radius: 4px;
+  margin-top: 60px;
+  color: white;
+  position: absolute;
+  transition: 0.3s ease;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.butn:focus {
+  outline: none;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.butn:hover {
+  padding: 10px 16px;
+  font-size: 18px;
+  background: white;
+  border: 1px solid firebrick;
+  border-radius: 4px;
+  margin-top: 60px;
+  color: firebrick;
+  position: absolute;
+  transition: 0.3s ease;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#msg {
+  margin-top: 90px;
+}
+input {
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0,0,0,0);
+  border-bottom: 1px solid red;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: red;
+  height: 1px;
+  margin-top: 50px;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url(images/Monthly-Website-Header-background.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.banner-skyline {
+  width: 100%;
+  height: 400px;
+  background: url(Images/skyline2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.banner-tree {
+  width: 100%;
+  height: 400px;
+  background: url(Images/tree2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: 0.5;
+  postion: absolute;
+}
+
+.gradient-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, red, skyblue);
+  opacity: 0.5;
+  postion: absolute;
+}
+
+.low-key-color-overlay {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: 0.3;
+  postion: absolute;
+}
+
+.marg-top {
+  padding-top: 50px;
+}
+
+.container img {
+  margin-top: 20px;
+}
+
+.rainbow {
+   -webkit-animation: rainbow 3s infinite;
+  animation: rainbow 3s infinite;
+}
+
+@-webkit-keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: auto;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  transition: 0.5s ease;
+  z-index: 10 !important;
+}
+
+nav ul li:hover {
+  border-bottom: 4px solid #ff471a;
+  color: red;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+
+}
+
+.hr-proj {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100px;
+  background-color: red;
+  height: 2.5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form {
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.frbrick {
+  color: #ef4c5f;
+}
+
+nav.black ul {
+  background: black;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: 0.5s ease;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px !important;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  display: none;
+}
+
+i {
+  color: white;
+  transition: 0.5s ease;
+}
+
+i:hover {
+  color: red;
+}
+
+.thick {
+    background-color: firebrick;
+    color: firebrick !important;
+    border: solid 2px firebrick ;
+    height: 5px;
+    width: 40%;
+    margin-left: 0px;
+}
+
+nav ul li .rightnow {
+  color: red;
+}
+
+.rsm {
+  background-color: white;
+}
+
+.gris {
+  color: #999999;
+}
+
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: relative;
+    bottom: 0px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+   
+}
+
+.ct-btn-scroll:hover {
+  background-color: red;
+ 
+ 
+  
+}
+
+.bigtext {
+  position: absolute;
+  background-attachment: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.bigtext-contact {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+
+
+.banner-text {
+  position: absolute;
+  margin-top: -150px;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+
+
+
+
+@media(max-width: 800px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 15px;
+
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 25em;
+  }
+
+  nav ul li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+    z-index: 10;
+  }
+
+
+  nav ul li:hover {
+    border-bottom: transparent;
+  }
+  .menu-icon {
+    display: block;
+    transition: 0.3s ease;
+  }
+
+  .menu-icon:hover {
+    color: #ff471a;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .row-mobile {
+    display: block;
+    text-align: center;
+  }
+
+
+  .col img {
+    margin-bottom: 20px;
+  }
+
+  .big-img{
+    margin-bottom: 20px;
+    height: 250px;
+    width: 85%;
+  }
+
+  .banner-text {
+  position: absolute;
+  margin-top: -150px;
+  left: 42.5%;
+  transform: translate(-20%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+}
